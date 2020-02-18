@@ -23,13 +23,13 @@ class App extends Component {
     console.log(this.state.recipes);
   }
 
-  componentDidMount = () => {
-    if(localStorage.getItem('recipes') !== null || localStorage.getItem('recipes') !== undefined){
-      const json = localStorage.getItem('recipes');
-      const recipes = JSON.parse(json);
-      this.setState({recipes});
-    }
-  }
+  // componentDidMount = () => {
+  //   if(localStorage.getItem('recipes') !== null || localStorage.getItem('recipes') !== undefined){
+  //     const json = localStorage.getItem('recipes');
+  //     const recipes = JSON.parse(json);
+  //     this.setState({recipes});
+  //   }
+  // }
 
   componentDidUpdate = () => {
     const recipes = JSON.stringify(this.state.recipes);
